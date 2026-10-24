@@ -13,15 +13,15 @@ type Section = { section: string; items: Item[] };
 const groups: Record<string, Section[]> = {
   Shisha: [menu.shishas],
   Drinks: [
-    menu.cocktails,
-    menu.mocktailsOhneAlkohol,
-    menu.spritz,
     menu.softgetraenke,
     menu.saefte,
     menu.heissgetraenke,
     menu.bier,
+    menu.cocktails,
+    menu.mocktailsOhneAlkohol,
     menu.aperitif,
     menu.likoere,
+    menu.spritz,
     menu.vodka,
     menu.whiskys,
     menu.rum,
