@@ -46,7 +46,7 @@ export function Header() {
           </Link>
         ))}
       </nav>
-      <a className="header-cta" href="tel:+41764558088">
+      <a className="header-cta" href="tel:+41762355000">
         Tisch anfragen <ArrowUpRight size={16} />
       </a>
       <button
@@ -80,11 +80,11 @@ export function Footer() {
         5610 Wohlen, Switzerland
       </div>
       <div>
-        <a href="tel:+41764558088">
-          +41 76 455 80 88 <ArrowUpRight size={12} aria-hidden="true" />
+        <a href="tel:+41762355000">
+          076 235 50 00 <ArrowUpRight size={12} aria-hidden="true" />
         </a>
-        <a href="mailto:station.wohlen@gmail.com">
-          station.wohlen@gmail.com <ArrowUpRight size={12} aria-hidden="true" />
+        <a href="mailto:stationbar4@gmail.com">
+          stationbar4@gmail.com <ArrowUpRight size={12} aria-hidden="true" />
         </a>
       </div>
       <div className="footer-bottom">

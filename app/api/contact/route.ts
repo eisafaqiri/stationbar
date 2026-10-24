@@ -75,7 +75,7 @@ export async function POST(request: Request) {
   )
     return reply(
       503,
-      "Das Formular ist gerade nicht verfügbar. Bitte ruf uns unter +41 76 455 80 88 an.",
+      "Das Formular ist gerade nicht verfügbar. Bitte ruf uns unter 076 235 50 00 an.",
     );
   if (secret) {
     if (
@@ -148,7 +148,7 @@ export async function POST(request: Request) {
     console.error("Contact admin delivery failed", { reference });
     return reply(
       502,
-      "Der Versand konnte nicht bestätigt werden. Bitte ruf uns unter +41 76 455 80 88 an.",
+      "Der Versand konnte nicht bestätigt werden. Bitte ruf uns unter 076 235 50 00 an.",
     );
   } finally {
     transport.close();

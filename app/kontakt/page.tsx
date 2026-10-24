@@ -15,7 +15,7 @@ export default function ContactPage() {
   return (
     <Motion>
       <main id="main" className="contact-page">
-        <div className="page-intro">
+        {/* <div className="page-intro">
           <Atmosphere />
           <span className="eyebrow">STAIONBAR / WIR SEHEN UNS</span>
           <h1>
@@ -26,7 +26,7 @@ export default function ContactPage() {
           <p>
             Direkt am Bahnhofplatz. Mitten in Wohlen. Wir freuen uns auf dich.
           </p>
-        </div>
+        </div> */}
         <div className="contact-grid section-pad">
           <div className="contact-details reveal">
             <span className="eyebrow">KOMM VORBEI. BLEIB EIN BISSCHEN.</span>
@@ -48,17 +48,17 @@ export default function ContactPage() {
               </span>
               <ArrowUpRight />
             </a>
-            <a className="contact-row" href="tel:+41764558088">
+            <a className="contact-row" href="tel:+41762355000">
               <Phone />
               <span>
-                <small>FRAGEN & TISCHRESERVIERUNG</small>+41 76 455 80 88
+                <small>FRAGEN & TISCHRESERVIERUNG</small>076 235 50 00
               </span>
               <ArrowUpRight />
             </a>
-            <a className="contact-row" href="mailto:station.wohlen@gmail.com">
+            <a className="contact-row" href="mailto:stationbar4@gmail.com">
               <Mail />
               <span>
-                <small>SCHREIB UNS</small>station.wohlen@gmail.com
+                <small>SCHREIB UNS</small>stationbar4@gmail.com
               </span>
               <ArrowUpRight />
             </a>
@@ -82,7 +82,7 @@ export default function ContactPage() {
               <br />
               Für deinen Tisch ruf uns einfach an.
             </p>
-            <a className="button" href="tel:+41764558088">
+            <a className="button" href="tel:+41762355000">
               Jetzt anrufen <ArrowUpRight size={18} />
             </a>
           </div>

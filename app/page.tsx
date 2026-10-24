@@ -69,7 +69,7 @@ export default function Home() {
             <ArrowDown size={20} aria-hidden="true" />
           </a>
           <div className="hero-reserve">
-            <a href="tel:+41764558088" className="button">
+            <a href="tel:+41762355000" className="button">
               Dein Tisch. Dein Abend. <ArrowUpRight size={19} />
             </a>
             <span>DO – SO AB 16:00 UHR</span>

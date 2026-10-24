@@ -52,8 +52,8 @@ export const localBusiness = {
   "@id": new URL("/#business", siteUrl).href,
   name: "Staionbar",
   url: siteUrl.href,
-  telephone: "+41 76 455 80 88",
-  email: "station.wohlen@gmail.com",
+  telephone: "+41 76 235 50 00",
+  email: "stationbar4@gmail.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Bahnhofplatz 1",

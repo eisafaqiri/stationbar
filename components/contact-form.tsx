@@ -111,7 +111,7 @@ export default function ContactForm() {
           Eine Frage, ein besonderer Anlass oder ein Abend mit deinen Leuten?
           Schreib uns – wir freuen uns auf deine Nachricht.
         </p>
-        <a className="text-link" href="tel:+41764558088">
+        <a className="text-link" href="tel:+41762355000">
           Lieber direkt? Ruf uns an <ArrowUpRight size={18} />
         </a>
         <div className="contact-form-note">
@@ -198,8 +198,8 @@ export default function ContactForm() {
           <p className="contact-privacy">
             Deine Angaben werden für die Beantwortung deiner Anfrage genutzt.
             Bei Fragen zu deinen Daten erreichst du uns unter{" "}
-            <a href="mailto:station.wohlen@gmail.com">
-              station.wohlen@gmail.com
+            <a href="mailto:stationbar4@gmail.com">
+              stationbar4@gmail.com
             </a>
             . Bitte sende keine sensiblen Daten.
           </p>
@@ -241,8 +241,8 @@ export default function ContactForm() {
         <noscript>
           <p>
             Bitte aktiviere JavaScript für das Formular oder schreibe an{" "}
-            <a href="mailto:station.wohlen@gmail.com">
-              station.wohlen@gmail.com
+            <a href="mailto:stationbar4@gmail.com">
+              stationbar4@gmail.com
             </a>
             .
           </p>
