@@ -16,7 +16,7 @@ const groups: Record<string, Section[]> = {
     menu.cocktails,
     menu.mocktailsOhneAlkohol,
     menu.spritz,
-    // menu.softgetraenke,
+    menu.softgetraenke,
     menu.saefte,
     menu.heissgetraenke,
     menu.bier,

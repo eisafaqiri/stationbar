@@ -1,25 +1,25 @@
-// export const softgetraenke = {
-//   section: "Softgetränke",
-//   imageUrl:
-//     "https://images.ctfassets.net/87jhdyn6f199/3hx9gr8CoHUg1Nm9s4iH5j/12fc6d707424f7f7742fdba3665a2aba/soft_drink.jpg",
-//   items: [
-//     { code: "#SO1", name: "Wasser ohne", price: 5.5 },
-//     { code: "#SO2", name: "Wasser mit", price: 5.5 },
-//     { code: "#SO3", name: "Coca-Cola", price: 6.0 },
-//     { code: "#SO4", name: "Coca-Cola Zero", price: 6.0 },
-//     { code: "#SO5", name: "Fanta Orange", price: 6.0 },
-//     { code: "#SO6", name: "Sprite Citro", price: 6.0 },
-//     { code: "#SO7", name: "Ice Tea Lemon", price: 6.0 },
-//     { code: "#SO8", name: "Ice Tea Peach", price: 6.0 },
-//     { code: "#SO9", name: "Schweppes Bitter Lemon", price: 6.0 },
-//     { code: "#SO10", name: "Schweppes Tonic", price: 6.0 },
-//     { code: "#SO11", name: "Red Bull", price: 7.0 },
-//     { code: "#SO12", name: "Red Bull Sugarfree", price: 7.0 },
-//     { code: "#SO13", name: "Red Bull Wassermelone", price: 7.0 },
-//     { code: "#SO14", name: "Red Bull Heidelbeeren Blau", price: 7.0 },
-//     { code: "#SO15", name: "Red Bull Coco Heidelbeeren", price: 7.0 },
-//   ],
-// };
+export const softgetraenke = {
+  section: "Softgetränke",
+  imageUrl:
+    "https://images.ctfassets.net/87jhdyn6f199/3hx9gr8CoHUg1Nm9s4iH5j/12fc6d707424f7f7742fdba3665a2aba/soft_drink.jpg",
+  items: [
+    { code: "#SO1", name: "Wasser ohne", price: 5.5 },
+    { code: "#SO2", name: "Wasser mit", price: 5.5 },
+    { code: "#SO3", name: "Coca-Cola", price: 6.0 },
+    { code: "#SO4", name: "Coca-Cola Zero", price: 6.0 },
+    { code: "#SO5", name: "Fanta Orange", price: 6.0 },
+    { code: "#SO6", name: "Sprite Citro", price: 6.0 },
+    { code: "#SO7", name: "Ice Tea Lemon", price: 6.0 },
+    { code: "#SO8", name: "Ice Tea Peach", price: 6.0 },
+    { code: "#SO9", name: "Schweppes Bitter Lemon", price: 6.0 },
+    { code: "#SO10", name: "Schweppes Tonic", price: 6.0 },
+    { code: "#SO11", name: "Red Bull", price: 7.0 },
+    { code: "#SO12", name: "Red Bull Sugarfree", price: 7.0 },
+    { code: "#SO13", name: "Red Bull Wassermelone", price: 7.0 },
+    { code: "#SO14", name: "Red Bull Heidelbeeren Blau", price: 7.0 },
+    { code: "#SO15", name: "Red Bull Coco Heidelbeeren", price: 7.0 },
+  ],
+};
 
 export const saefte = {
   section: "Säfte",
