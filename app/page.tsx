@@ -1,69 +1,214 @@
-import Image from "next/image";
-
+﻿import Image from "next/image";
+import Link from "next/link";
+import { ArrowUpRight, ArrowDown } from "lucide-react";
+import { Atmosphere, Motion } from "@/components/motion";
+import HeroSplash from "@/components/hero-splash";
+import { localBusiness, pageMetadata } from "@/lib/site";
+export const metadata = pageMetadata(
+  "Shisha, Bar & Lounge in Wohlen",
+  "Shisha, Cocktails und entspannte Lounge-Abende direkt am Bahnhofplatz 1 in Wohlen. Entdecke unsere Karte, Öffnungszeiten und Kontaktmöglichkeiten.",
+  "/",
+);
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <Motion>
+      <main id="main" className="night-home">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusiness).replace(/</g, "\\u003c"),
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <section className="night-hero" aria-labelledby="hero-heading">
+          <Atmosphere />
+          <HeroSplash />
+          <div className="hero-kicker">
+            <span>
+              <i /> SHISHA. DRINKS. GOOD COMPANY.
+            </span>
+            <span>WOHLEN, CH — BAHNHOFPLATZ 1</span>
+          </div>
+          <div className="hero-orbit" aria-hidden="true">
+            <span className="orbit-cross">+</span>
+            <span className="orbit-label">THE ART OF SLOW NIGHTS</span>
+          </div>
+          <div className="hero-portrait">
             <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+              src="/images/shisha-night.webp"
+              alt="Schwarze Shisha mit Kristallglas und silbernen Rauchschwaden im warmen Licht"
+              fill
+              sizes="(max-width: 700px) 95vw, 48vw"
+              preload
+              className="hero-photo"
             />
-            Deploy Now
-          </a>
+          </div>
+          <h1 id="hero-heading" className="night-title">
+            <span className="title-left">LANGE</span>
+            <span className="title-right">NÄCHTE.</span>
+            <span className="title-script">Gute Zeiten.</span>
+          </h1>
+          <div className="hero-side-label">
+            SHISHA & COCKTAIL LOUNGE / WOHLEN
+          </div>
+          <div className="hero-intro">
+            <span className="eyebrow">WILLKOMMEN IN DER STAIONBAR</span>
+            <p>
+              Der Tag hat genug Tempo.
+              <br />
+              Dein Abend braucht nur den richtigen Ort.
+            </p>
+            <Link href="/menu" className="text-link">
+              Entdecke die Karte <ArrowUpRight size={18} />
+            </Link>
+          </div>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            className="scroll-disc"
+            href="#lounge"
+            aria-label="Die Lounge entdecken"
           >
-            Documentation
+            <ArrowDown size={20} aria-hidden="true" />
           </a>
-        </div>
+          <div className="hero-reserve">
+            <a href="tel:+41764558088" className="button">
+              Dein Tisch. Dein Abend. <ArrowUpRight size={19} />
+            </a>
+            <span>DO – SO AB 16:00 UHR</span>
+          </div>
+          <div className="hero-exit" aria-hidden="true">
+            <span className="eyebrow">RAUS AUS DEM ALLTAG.</span>
+            <p>
+              Rein in <em>die Nacht.</em>
+            </p>
+          </div>
+          <div className="hero-index">
+            <span>01 / ANKOMMEN</span>
+            <span>TAKE YOUR TIME.</span>
+          </div>
+        </section>
+        <section
+          id="lounge"
+          className="night-story"
+          aria-labelledby="story-heading"
+        >
+          <div className="story-top">
+            <span className="eyebrow">02 / LOSLASSEN</span>
+            <span className="eyebrow">WENIGER ALLTAG. MEHR MOMENT.</span>
+          </div>
+          <div className="story-stage">
+            <div className="story-copy">
+              <span className="eyebrow accent">
+                GUTE ABENDE HABEN KEINEN ZEITDRUCK.
+              </span>
+              <h2 id="story-heading">
+                <span className="story-word">ANKOMMEN.</span>
+                <span className="story-word">ABSCHALTEN.</span>
+                <span className="story-word italic-word">BLEIBEN.</span>
+              </h2>
+              <p>
+                Deine Lieblingsshisha. Eis im Glas. Gute Gespräche.
+                <br />
+                Mitten in Wohlen schaffen wir Platz für das,
+                <br className="desktop-break" /> was einen Abend besonders
+                macht.
+              </p>
+              <Link href="/kontakt" className="text-link">
+                Hier findest du uns <ArrowUpRight size={18} />
+              </Link>
+            </div>
+            <div className="story-photo-wrap">
+              <div className="story-image">
+                <Image
+                  src="/images/cocktail-night.webp"
+                  alt="Amberfarbener Cocktail mit Eis und Orangenzeste in stimmungsvoll dunkler Atmosphäre"
+                  fill
+                  sizes="(max-width: 700px) 100vw, 55vw"
+                />
+              </div>
+              <span className="photo-caption">SLOW SIPS. LONG TALKS.</span>
+              <div className="story-seal" aria-hidden="true">
+                <span>STAIONBAR</span>
+                <b className="seal-monogram">s</b>
+                <span>AFTER HOURS</span>
+              </div>
+            </div>
+          </div>
+          <div className="story-bottom">
+            <span>SHISHA CULTURE</span>
+            <i />
+            <span>COCKTAIL MOMENTS</span>
+            <i />
+            <span>GOOD COMPANY</span>
+          </div>
+        </section>
+        <section className="night-menu" aria-labelledby="menu-heading">
+          <div className="menu-heading-row">
+            <div>
+              <span className="eyebrow">03 / GENIESSEN</span>
+              <h2 id="menu-heading">
+                <span className="menu-title-mask">
+                  <span className="menu-title-line">DEINE NACHT.</span>
+                </span>
+                <span className="menu-title-mask">
+                  <em className="menu-title-line">Dein Geschmack.</em>
+                </span>
+              </h2>
+            </div>
+            <p>
+              Du bringst deine Leute.
+              <br />
+              Wir haben den Rest.
+            </p>
+          </div>
+          <div className="night-menu-links">
+            {[
+              {
+                n: "01",
+                title: "SHISHA",
+                note: "Von frischer Minze bis zu deinem Lieblingsmix.",
+                q: "Shisha",
+                tag: "FIND YOUR FLAVOUR",
+              },
+              {
+                n: "02",
+                title: "DRINKS",
+                note: "Cocktails, Klassiker & alkoholfreie Lieblingsdrinks.",
+                q: "Drinks",
+                tag: "RAISE YOUR GLASS",
+              },
+              {
+                n: "03",
+                title: "FOOD & SWEETS",
+                note: "Für den kleinen Hunger. Und die süssen Momente.",
+                q: "Food",
+                tag: "ONE MORE BITE",
+              },
+            ].map((item) => (
+              <Link
+                key={item.n}
+                href={"/menu?category=" + item.q}
+                className="menu-night-row"
+              >
+                <span className="menu-row-rule" aria-hidden="true" />
+                <span className="menu-night-number">{item.n}</span>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.note}</p>
+                </div>
+                <span className="row-tag">{item.tag}</span>
+                <span className="row-arrow">
+                  <ArrowUpRight />
+                </span>
+              </Link>
+            ))}
+          </div>
+          <div className="night-menu-bottom">
+            <span>172 ENTDECKUNGEN. DEIN NÄCHSTER LIEBLING IST DABEI.</span>
+            <Link className="button" href="/menu">
+              Zur ganzen Karte <ArrowUpRight size={18} />
+            </Link>
+          </div>
+        </section>
       </main>
-    </div>
+    </Motion>
   );
 }
